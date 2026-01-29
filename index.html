@@ -203,7 +203,36 @@
   .two-col{grid-template-columns: 1fr;}
 }
 
-  </style>
+  
+/* ---- 모바일 네비 정렬 보정 ---- */
+.nav-bar{
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+.nav-bar a{
+  white-space: nowrap;
+}
+
+@media (max-width: 520px){
+  .nav-bar{
+    justify-content: center;
+    gap: 10px 12px; /* row/column gap */
+    padding: 12px 12px;
+  }
+  .nav-bar a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: #f1f5f9;
+    border: 1px solid #e2e8f0;
+    font-size: 0.84rem;
+    line-height: 1.1;
+  }
+}
+
+</style>
 </head>
 <body>
 
